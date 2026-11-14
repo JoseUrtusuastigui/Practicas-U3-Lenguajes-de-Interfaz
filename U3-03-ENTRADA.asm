@@ -16,9 +16,6 @@ mensajeValido   BYTE "EAX = 1: Entrada no vacia", 0
 .code
 main PROC
 
-    ; ---------------------------------------------------------
-    ; CASO 1: Simular una entrada vacia (longitud = 0).
-    ; ---------------------------------------------------------
     mov edx, OFFSET mensajeCaso1    ; EDX apunta a la cadena que WriteString imprimira.
     call WriteString                ; Mostrar el caso que se probara.
     call Crlf                       ; Salto de linea.
@@ -42,9 +39,7 @@ segundoCaso:
     call Crlf                       ; Terminar la linea del resultado.
     call Crlf                       ; Linea en blanco para separar ambos casos.
 
-    ; ---------------------------------------------------------
-    ; CASO 2: Simular una entrada de siete caracteres.
-    ; ---------------------------------------------------------
+  
     mov edx, OFFSET mensajeCaso2    ; Cadena que identifica el caso 2.
     call WriteString                ; Mostrarla en pantalla.
     call Crlf
