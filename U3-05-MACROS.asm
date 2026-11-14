@@ -1,11 +1,20 @@
-INCLUDE Irvine32.inc
-mostrarMensaje MACRO texto 
-  mov edx, OFFSET texto
-  call WriteString 
-  call crlf
-  ENDM
+; Materia: Lenguajes de Interfaz
+; Alumno: Fabian Alexis Camacho Oviedo
+; Horario: 8-9
+; Docente: Dr José Luis Medina Jiménez
+; Práctica: 5
 
-  ; Macros para multiplicar dos cantidades
+
+INCLUDE Irvine32.inc
+
+; Macro para mostrar un mensaje.
+mostrarMensaje MACRO texto
+    mov edx, OFFSET texto
+    call WriteString
+    call Crlf
+ENDM
+
+; Macro para multiplicar dos cantidades.
 multiplicar MACRO cantidad1, cantidad2
     mov eax, cantidad1
     mov ebx, cantidad2
@@ -22,18 +31,18 @@ mensajeResultado BYTE "Resultado de la multiplicacion: ", 0
 
 .code
 main PROC
-   mostrarMensaje mensajeBienvenida
-   mostrarMensaje mensajeFin
 
-   
-   mostrarMensaje mensajeResultado
+    mostrarMensaje mensajeBienvenida
+    mostrarMensaje mensajeFin
 
-   multiplicar numero1, numero2
+    mostrarMensaje mensajeResultado
+
+    ; Calcular y mostrar el resultado.
+    multiplicar numero1, numero2
     call WriteDec
     call Crlf
 
-   exit
-main ENDP 
+    exit
 
-
-END main 
+main ENDP
+END m
