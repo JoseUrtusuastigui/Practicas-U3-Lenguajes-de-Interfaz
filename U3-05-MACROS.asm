@@ -45,4 +45,4 @@ main PROC
     exit
 
 main ENDP
-END m
+END main
