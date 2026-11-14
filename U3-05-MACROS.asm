@@ -1,5 +1,5 @@
 ; Materia: Lenguajes de Interfaz
-; Alumno: Fabian Alexis Camacho Oviedo
+; Alumno: Jose Luis Urtusuastigui Villaseñor
 ; Horario: 8-9
 ; Docente: Dr José Luis Medina Jiménez
 ; Práctica: 5
