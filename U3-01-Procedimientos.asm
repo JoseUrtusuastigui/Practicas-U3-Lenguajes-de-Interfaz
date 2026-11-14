@@ -1,3 +1,9 @@
+; Materia: Lenguajes de Interfaz
+; Alumno: Fabian Alexis Camacho Oviedo
+; Horario: 8-9
+; Docente: Dr José Luis Medina Jiménez
+; Práctica: 1
+
 INCLUDE Irvine32.inc
 
 .data
@@ -27,7 +33,7 @@ main PROC
   call crlfs
 main ENDP 
 
-;mostrar un mensaje y regresar al punto despiues del llamado
+;mostrar un mensaje y regresar al punto despues del llamado
 
 mostrarAviso PROC
 mov edx, OFFSET mensajeProcedimiento
